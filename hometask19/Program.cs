@@ -6,7 +6,7 @@
         Console.Write(userInformation);
         string userLine = Console.ReadLine();
         int.TryParse(userLine, out result);
-        if ((result == 0)||(userLine != "0")||(result / 10000 < 1)||(result / 10000 > 9)) Console.WriteLine($"Введите целое пятизначное число, вы вввели {userLine}"); else break;
+        if ((result == 0)||(result / 10000 < 1)||(result / 10000 > 9)) Console.WriteLine($"Введите целое пятизначное число, вы вввели {userLine}"); else break;
     }
     return result;
 }
